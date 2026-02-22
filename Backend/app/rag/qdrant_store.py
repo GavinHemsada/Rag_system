@@ -40,7 +40,7 @@ def search(query_vector: list[float], top_k: int) -> list[dict]:
     qc = get_qdrant()
     hits = qc.search(
         collection_name=QDRANT_COLLECTION,
-        query_vector=query_vector,
+        query=query_vector,
         limit=top_k,
         with_payload=True,
     )
