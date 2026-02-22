@@ -1,0 +1,43 @@
+<svg width="320" height="400" viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bodyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A6F3C1"/>
+      <stop offset="100%" stop-color="#3FD6E0"/>
+    </linearGradient>
+
+    <linearGradient id="armGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4EDBD6"/>
+      <stop offset="100%" stop-color="#2BB5C1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Antenna -->
+  <circle cx="160" cy="28" r="6" fill="#B9FFD7"/>
+  <rect x="156" y="34" width="8" height="22" rx="4" fill="#9AF0C9"/>
+
+  <!-- Head -->
+  <rect x="70" y="56" width="180" height="150" rx="60" fill="url(#bodyGradient)"/>
+
+  <!-- Face screen -->
+  <rect x="95" y="90" width="130" height="70" rx="35" fill="#0C1E2B"/>
+
+  <!-- Eyes -->
+  <circle cx="135" cy="125" r="14" fill="#FFFFFF"/>
+  <circle cx="185" cy="125" r="14" fill="#FFFFFF"/>
+
+  <circle cx="139" cy="129" r="6" fill="#0C1E2B"/>
+  <circle cx="189" cy="129" r="6" fill="#0C1E2B"/>
+
+  <!-- Smile -->
+  <path d="M150 145 Q160 155 170 145" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Body -->
+  <rect x="100" y="200" width="120" height="130" rx="60" fill="url(#bodyGradient)"/>
+
+  <!-- Left Arm -->
+  <path d="M90 220
+           C40 230, 40 280, 95 290"
+        fill="url(#armGradient)"/>
+
+</svg>
