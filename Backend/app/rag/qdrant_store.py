@@ -38,16 +38,19 @@ def upsert_chunks(
 
 def search(query_vector: list[float], top_k: int) -> list[dict]:
     qc = get_qdrant()
-    hits = qc.search(
+
+    res = qc.query_points(
         collection_name=QDRANT_COLLECTION,
-        query=query_vector,
+        query=query_vector,          # vector
         limit=top_k,
         with_payload=True,
+        with_vectors=False,
     )
+
     results = []
-    for h in hits:
+    for p in res.points:
         results.append({
-            "score": float(h.score),
-            "payload": h.payload or {},
+            "score": float(p.score),
+            "payload": p.payload or {},
         })
     return results
