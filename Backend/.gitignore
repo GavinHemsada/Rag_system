@@ -65,7 +65,6 @@ qdrant/
 data/uploads/
 data/raw/
 *.pdf
-*.txt
 *.docx
 
 # Cache
